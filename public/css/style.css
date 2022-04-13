@@ -1,4 +1,167 @@
 @charset "UTF-8";
+body {
+  padding: 0;
+}
+body .flexbox {
+  display: flex;
+  flex-direction: row;
+}
+body .part {
+  width: 50%;
+}
+body .container {
+  flex-direction: column;
+}
+body h2, body .h2 {
+  text-transform: uppercase;
+}
+body header {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  color: #ffffff;
+}
+body header nav {
+  margin-right: 5%;
+  z-index: 2;
+  width: 50%;
+}
+body header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+body header nav ul li {
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+body header nav ul li a {
+  text-decoration: none;
+  color: #e3e3e3;
+}
+body h1, body .h1 {
+  z-index: 2;
+  margin-left: 5%;
+  width: 50%;
+}
+body #banner {
+  background-image: linear-gradient(rgba(24, 29, 37, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
+  background-size: cover;
+  width: 100%;
+  top: 0;
+  height: 700px;
+  text-align: center;
+  padding-top: 20%;
+  margin-bottom: 5%;
+}
+body #banner h2, body #banner .h2 {
+  color: #ffffff;
+}
+body #banner .gris {
+  color: grey;
+  text-transform: uppercase;
+}
+body #banner button {
+  background-color: #f32853;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+body #one .gris {
+  color: grey;
+  text-transform: uppercase;
+}
+body #two {
+  background-color: #f6f6f6;
+}
+body #two .gris {
+  color: grey;
+  text-transform: uppercase;
+}
+body #two button:nth-child(1) {
+  background-color: #f32853;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+}
+body #two button:nth-child(2) {
+  background-color: #323037;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+}
+body #three img {
+  border-radius: 50%;
+  border: 3px solid lightgrey;
+}
+body #three .reverse {
+  flex-direction: row-reverse;
+}
+body #three .gris {
+  color: grey;
+  text-transform: uppercase;
+}
+body #three .container-flex {
+  flex-direction: row;
+}
+body #four {
+  background-image: linear-gradient(rgba(24, 29, 37, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
+  background-position: 0;
+  background-size: cover;
+  height: 400px;
+  justify-content: center;
+}
+body #four h2, body #four .h2 {
+  padding-top: 7%;
+}
+body #four button {
+  background-color: #f32853;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+body #four .gris {
+  color: grey;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #f6f6f6;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+footer ul li {
+  padding: 15px;
+}
+footer ul .copyright {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+}
+footer ul .copyright a {
+  text-decoration: none;
+}
+footer ul .copyright a:after {
+  content: "";
+  display: block;
+  border-right: 50px solid grey;
+}
+
 /*!
  * Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -21256,157 +21419,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  padding: 0;
-}
-body h2, body .h2 {
-  text-transform: uppercase;
-}
-body header {
-  display: flex;
-  position: absolute;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  height: 10%;
-  color: #ffffff;
-}
-body header nav {
-  margin-right: 5%;
-  z-index: 2;
-  width: 50%;
-}
-body header nav ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-}
-body header nav ul li {
-  margin-right: 10px;
-  text-transform: uppercase;
-}
-body header nav ul li a {
-  text-decoration: none;
-  color: #e3e3e3;
-}
-body h1, body .h1 {
-  z-index: 2;
-  margin-left: 5%;
-  width: 50%;
-}
-body #banner {
-  background-image: linear-gradient(rgba(24, 29, 37, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
-  background-size: cover;
-  width: 100%;
-  top: 0;
-  height: 700px;
-  text-align: center;
-  padding-top: 20%;
-  margin-bottom: 5%;
-}
-body #banner h2, body #banner .h2 {
-  color: #ffffff;
-}
-body #banner .gris {
-  color: grey;
-  text-transform: uppercase;
-}
-body #banner button {
-  background-color: #f32853;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-body #one .gris {
-  color: grey;
-  text-transform: uppercase;
-}
-body #two {
-  background-color: #f6f6f6;
-}
-body #two .gris {
-  color: grey;
-  text-transform: uppercase;
-}
-body #two button:nth-child(1) {
-  background-color: #f32853;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  text-transform: uppercase;
-}
-body #two button:nth-child(2) {
-  background-color: #323037;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  text-transform: uppercase;
-}
-body #three img {
-  border-radius: 50%;
-  border: 3px solid lightgrey;
-}
-body #three .reverse {
-  flex-direction: row-reverse;
-}
-body #three .gris {
-  color: grey;
-  text-transform: uppercase;
-}
-body #four {
-  background-image: linear-gradient(rgba(24, 29, 37, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
-  background-position: 0;
-  background-size: cover;
-  height: 400px;
-}
-body #four h2, body #four .h2 {
-  padding-top: 7%;
-}
-body #four button {
-  background-color: #f32853;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-body #four .gris {
-  color: grey;
-  text-transform: uppercase;
-}
-
-footer {
-  background-color: #f6f6f6;
-}
-footer ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
-footer ul li {
-  padding: 15px;
-}
-footer ul .copyright {
-  display: flex;
-  flex-direction: row;
-  padding-left: 20px;
-}
-footer ul .copyright a {
-  text-decoration: none;
-}
-footer ul .copyright a:after {
-  content: "";
-  display: block;
-  border-right: 50px solid grey;
-}
-
-body .container_grid {
-  flex-direction: column !important;
+body .flexbox {
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

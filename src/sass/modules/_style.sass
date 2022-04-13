@@ -1,5 +1,12 @@
 body
     padding: 0
+    .flexbox
+        display: flex
+        flex-direction: row
+    .part
+        width: 50%
+    .container
+        flex-direction: column
     h2
         text-transform: uppercase
     header
@@ -83,14 +90,17 @@ body
         .gris
             color: grey
             text-transform: uppercase
+        .container-flex
+            flex-direction: row
     #four
         background-image: linear-gradient(rgba(24, 29, 37, 0.5),rgba(0, 0, 0, 0.5)) , url("../images/banner.jpg")
         background-position: 0
         background-size: cover
         height: 400px
+        justify-content: center
         h2
-            padding-top:7%
-            
+            padding-top: 7%
+
         button
             background-color: $red
             color: $white
@@ -120,5 +130,3 @@ footer
                     content: ""
                     display: block
                     border-right: 50px solid grey
-
-    
