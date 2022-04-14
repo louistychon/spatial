@@ -1,177 +1,4 @@
 @charset "UTF-8";
-body {
-  padding: 0;
-}
-body .flexbox {
-  display: flex;
-  flex-direction: row;
-}
-body .part {
-  width: 50%;
-}
-body .container {
-  flex-direction: column;
-}
-body h2, body .h2 {
-  text-transform: uppercase;
-}
-body header {
-  display: flex;
-  position: absolute;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  height: 10%;
-  color: #ffffff;
-}
-body header nav {
-  margin-right: 5%;
-  z-index: 2;
-  width: 50%;
-}
-body header nav ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-}
-body header nav ul li {
-  margin-right: 10px;
-  text-transform: uppercase;
-}
-body header nav ul li a {
-  text-decoration: none;
-  color: #e3e3e3;
-}
-body h1, body .h1 {
-  z-index: 2;
-  margin-left: 5%;
-  width: 50%;
-}
-body #banner {
-  background-image: linear-gradient(rgba(24, 29, 37, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
-  background-size: cover;
-  width: 100%;
-  top: 0;
-  height: 700px;
-  text-align: center;
-  padding-top: 20%;
-  margin-bottom: 5%;
-}
-body #banner h2, body #banner .h2 {
-  color: #ffffff;
-}
-body #banner .gris {
-  color: grey;
-  text-transform: uppercase;
-}
-body #banner button {
-  background-color: #f32853;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-body #one .gris {
-  color: grey;
-  text-transform: uppercase;
-}
-body #two {
-  background-color: #f6f6f6;
-}
-body #two .gris {
-  color: grey;
-  text-transform: uppercase;
-}
-body #two button:nth-child(1) {
-  background-color: #f32853;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  text-transform: uppercase;
-}
-body #two button:nth-child(2) {
-  background-color: #323037;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  text-transform: uppercase;
-}
-body #three img {
-  border-radius: 50%;
-  border: 3px solid lightgrey;
-}
-body #three .reverse {
-  flex-direction: row-reverse;
-}
-body #three .gris {
-  color: grey;
-  text-transform: uppercase;
-}
-body #three .container-flex {
-  flex-direction: row;
-}
-body #four {
-  background-image: linear-gradient(rgba(24, 29, 37, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
-  background-position: 0;
-  background-size: cover;
-  height: 400px;
-  justify-content: center;
-}
-body #four h2, body #four .h2 {
-  padding-top: 7%;
-}
-body #four button {
-  background-color: #f32853;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-body #four .gris {
-  color: grey;
-  text-transform: uppercase;
-}
-
-footer {
-  background-color: #f6f6f6;
-}
-footer ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
-footer ul li {
-  padding: 15px;
-}
-footer ul .copyright {
-  display: flex;
-  flex-direction: row;
-  padding-left: 20px;
-}
-footer ul .copyright a {
-  text-decoration: none;
-}
-footer ul .copyright a:after {
-  content: "";
-  display: block;
-  border-right: 50px solid grey;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    color: red;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  body {
-    color: yellow;
-  }
-}
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11289,6 +11116,227 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important;
+  }
+}
+body {
+  padding: 0;
+}
+body .flexbox {
+  display: flex;
+  flex-direction: row;
+}
+body .reverse {
+  flex-direction: row-reverse !important;
+}
+body .part {
+  width: 50%;
+}
+body .part:nth-child(1) {
+  margin-left: 5%;
+}
+body .part:nth-child(2) {
+  margin-right: 5%;
+}
+body .container {
+  flex-direction: column;
+}
+body h2, body .h2 {
+  text-transform: uppercase;
+}
+body header {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  color: #ffffff;
+}
+body header nav {
+  margin-right: 5%;
+  z-index: 2;
+  width: 50%;
+}
+body header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+body header nav ul li {
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+body header nav ul li a {
+  text-decoration: none;
+  color: #e3e3e3;
+}
+body h1, body .h1 {
+  z-index: 2;
+  margin-left: 5%;
+  width: 50%;
+}
+body #banner {
+  background-image: linear-gradient(rgba(24, 29, 37, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  padding-top: 20%;
+  margin-bottom: 1%;
+}
+body #banner h2, body #banner .h2 {
+  color: #ffffff;
+}
+body #banner .gris {
+  color: grey;
+  text-transform: uppercase;
+}
+body #banner button {
+  background-color: #f32853;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+body #one .gris {
+  color: grey;
+  text-transform: uppercase;
+}
+body #two {
+  background-color: #f6f6f6;
+}
+body #two .gris {
+  color: grey;
+  text-transform: uppercase;
+}
+body #two button:nth-child(1) {
+  background-color: #f32853;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+}
+body #two button:nth-child(2) {
+  background-color: #323037;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+}
+body #three img {
+  border-radius: 50%;
+  border: 3px solid lightgrey;
+}
+body #three .reverse {
+  flex-direction: row-reverse;
+}
+body #three .gris {
+  color: grey;
+  text-transform: uppercase;
+}
+body #three .container-flex {
+  flex-direction: row;
+}
+body #four {
+  background-image: linear-gradient(rgba(24, 29, 37, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
+  background-position: 0;
+  background-size: cover;
+  height: 400px;
+  justify-content: center;
+}
+body #four h2, body #four .h2 {
+  padding-top: 7%;
+}
+body #four button {
+  background-color: #f32853;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+body #four .gris {
+  color: grey;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #f6f6f6;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+footer ul li {
+  padding: 15px;
+}
+footer ul .copyright {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+}
+footer ul .copyright a {
+  text-decoration: none;
+}
+footer ul .copyright a:after {
+  content: "";
+  display: block;
+  border-right: 50px solid grey;
+}
+
+@media (max-width: 1024px) {
+  body .flexbox {
+    flex-direction: column;
+  }
+
+  .part {
+    text-align: center;
+    margin: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media (max-width: 767px) {
+  body #one .part {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 75%;
+  }
+  body #three .row {
+    flex-direction: column !important;
+  }
+  body #banner {
+    padding-top: 35%;
+  }
+}
+@media (max-width: 500px) {
+  body #three .text-end, body #three .text-start {
+    text-align: center !important;
+  }
+  body #three .img-round {
+    text-align: center !important;
+    margin: auto;
+    padding: 0 !important;
+  }
+  body #three .container > .flexbox > .col > .row > .flexbox {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body #two .buttons button {
+    width: 100% !important;
+    margin-top: 2%;
+  }
+  body #banner {
+    padding-top: 60%;
+  }
+
+  header nav ul {
+    flex-direction: column;
   }
 }
 

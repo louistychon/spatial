@@ -1,11 +1,47 @@
-@media (min-width: 768px) and (max-width: 1024px)
+@media ( max-width: 1024px )
         body
-                color: red
-@media (min-width: 320px) and (max-width: 767px)
-        body
-                color: yellow
+                .flexbox
+                        flex-direction: column
+        .part
+                text-align: center
+                margin: auto
+                margin-left: auto !important
+                margin-right: auto !important
+                        
 
-// @media (max-width: 767px)
-//         body
-//                 color: blue
-//                 display: none
+@media ( max-width: 767px )
+        body
+                #one
+                        .part
+                               margin-left: auto !important
+                               margin-right: auto !important
+                               width: 75%
+                #three
+                        .row
+                                flex-direction: column !important
+                #banner
+                        padding-top: 35%
+        
+@media ( max-width: 500px )
+        body
+                #three
+                        .text-end, .text-start
+                                text-align: center !important
+                        .img-round
+                                text-align: center !important
+                                margin: auto
+                                padding: 0 !important
+                        .container>.flexbox>.col>.row>.flexbox
+                                flex-direction: column
+                                flex-wrap: wrap
+                #two
+                        .buttons
+                                button
+                                        width: 100% !important
+                                        margin-top: 2%
+                #banner
+                        padding-top: 60%
+        header
+                nav
+                        ul
+                                flex-direction: column
