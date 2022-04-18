@@ -1,10 +1,5 @@
-const titreBlack = new Array();
-
 const two = document.querySelector('#two');
 const footer = document.querySelector('footer');
-titreBlack = document.getElementsByTagName('h3');
-
-var active = false;
 
 function toggledark() {
         document.body.style.backgroundColor = "black";
@@ -12,5 +7,4 @@ function toggledark() {
         two.style.backgroundColor = "black";
         footer.style.color = "white";
         footer.style.backgroundColor = "black";
-        titreBlack.style.backgroundColor = "red";
 }
