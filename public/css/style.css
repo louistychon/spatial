@@ -11266,6 +11266,7 @@ body #four .gris {
 
 footer {
   background-color: #f6f6f6;
+  color: grey;
 }
 footer ul {
   list-style-type: none;
